@@ -1,0 +1,135 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    button {
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    .deck {
+        margin: 15px;
+        width: 300px;
+        height: 460px;
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        border-radius: 10px;
+    }
+    
+    .deck:hover {
+        transform: scale(1.02);
+        transition-duration: 0.4s;
+    }
+    
+    .card {
+        width: 100%;
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear;
+        border-radius: 10px;
+        box-shadow: 13px 10px 23px 0px rgba(0, 0, 0, 0.43);
+    }
+    
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .front {
+        background-image: url('https://media.giphy.com/media/xUPGcsaV3FXTaBMA2A/giphy.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        box-shadow: inset 0 0 0 1000px rgba(2, 2, 2, 0.2);
+    }
+    
+    .edit {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid yellow;
+        outline-color: yellow;
+        color: white;
+        width: 95%;
+    }
+    
+    .navbar {
+        background-color: rgba(255, 212, 41, 0.856);
+    }
+    /*********************************************************/
+    
+    .coverImg {
+        background-image: url(../image/cover.gif);
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+        color: white;
+    }
+    
+    .hide {
+        visibility: hidden;
+    }
+    
+    .manageBtns {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .cardBtns {
+        background-color: transparent;
+        border: 1px solid yellow;
+    }
+    
+    .btn-circle {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        padding: 0;
+        border-radius: 50%;
+        border: 1px solid yellow;
+    }
+    
+    .yellow {
+        color: yellow;
+        font-weight: 900;
+    }
+    
+    @media only screen and (max-width: 576px) {
+        .headingHome {
+            padding-top: 35%;
+        }
+        .card {
+            width: 320px !important;
+        }
+        .cardContainer {
+            padding-bottom: 15%;
+        }
+        .dropdown {
+            margin-top: 2%;
+            padding-left: 0 !important;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .headingHome {
+            padding-top: 30%;
+        }
+        .card {
+            width: 250px;
+        }
+        .cardContainer {
+            padding-bottom: 10%;
+        }
+        .dropdown {
+            margin-top: 2%;
+            padding-left: 0 !important;
+        }
+    }
