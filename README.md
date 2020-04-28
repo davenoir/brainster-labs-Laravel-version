@@ -1,10 +1,10 @@
-Completely rewritten Brainster-Labs page in Laravel with CRUD operations and e-mail functionality in admin-panel
+Completely rewritten Brainster-Labs page in Laravel with CRUD operations and e-mail functionality in admin-panel.
 
 Test login credentials
 
 e-mail: admin@admin.com
 
-password:admin123
+password: admin123
 
 working demo: https://brainster-labs.davenoir.mk/
 
